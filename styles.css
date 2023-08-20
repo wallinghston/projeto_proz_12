@@ -51,6 +51,10 @@ li a:hover {
   background-color: #111;
 }
 
+a{
+  text-decoration: none;
+}
+
 .active {
   background-color: #aa6800;
 }
