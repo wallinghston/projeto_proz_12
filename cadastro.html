@@ -7,82 +7,96 @@
     <link rel="icon" type="image/png" href="./Img/bookico.png" />
     <title>Cadastro</title>
   </head>
+
   <body>
-    <header>
+    <header class="head">
       <a href="./index.html">
-        <p >
+        <p>
           <img src="./img/logo.png" alt="Logo Clube do Livro" />
         </p>
       </a>
 
       <nav>
-      <p>
-        <a href="./index.html">Inicio</a> |
-        <a href="./cadastro.html">Cadastre-se</a> |
-        <a href="./artigos.html">Artigos</a> |
-        <a href="./secoes.html">Seções</a> |
-        <a href="/sobre.html">Quem Somos</a> |
-      </p>
-    </nav>
+        <ul>
+          <li>
+            <a href="./index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="active" href="./cadastro.html">Cadastre-se</a>
+          </li>
+          <li>
+            <a href="./artigos.html">Artigos</a>
+          </li>
+          <li>
+            <a href="./secoes.html">Seções</a>
+          </li>
+          <li>
+            <a href="./duvidas.html">Dúvidas</a>
+          </li>
+          <li style="float: right">
+            <a href="/sobre.html">Quem Somos</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <div>
       <h1>Cadastre-se</h1>
     </div>
     <hr />
+
     <div>
       <form method="get" action="">
-        <div>
-          <label for="nome">Nome de Usuario:</label>
-          <br />
+        <div class="form-group">
+          <label>Nome</label>
           <input
+            id="form-name"
             type="text"
-            id="nome"
-            name="nome"
             placeholder="ex: Leitor123"
             title="Preencha com seu usuario"
             required
           />
         </div>
 
-        <br />
-
-        <div>
-          <label for="email">Email:</label>
-          <br />
+        <div class="form-group">
+          <label>Celular</label>
           <input
+            id="form-phone"
+            type="tel"
+            placeholder="+551199999999"
+            title="Insira seu número de telefone"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            id="form-email"
             type="email"
-            id="email"
-            name="nome"
-            placeholder="exemplo@gmail.com"
+            placeholder="email@provedor.com"
             title="Preencha com seu e-mail"
             required
           />
         </div>
 
-        <br />
-
-        <div>
-          <label for="senha">Senha:</label>
-          <br />
+        <div class="form-group">
+          <label>Senha</label>
           <input
+            id="form-pass"
             type="password"
-            id="pass"
             name="senha"
             minlength="8"
             maxlength="16"
             placeholder="ex: a@123#b4"
-            title="Insira sua senha"
+            title="min. 8 caracteres entre letras, n° e simbolos)"
             required
           />
-          <h5>(min 8 caracteres entre letras, n° e simbolos)</h5>
         </div>
 
-        <div>
-          <label for="nascimento">Data de Nascimento:</label>
-          <br />
+        <div class="form-group">
+          <label>Data de Nascimento</label>
           <input
+            id="form-birthdate"
             type="date"
-            id="birthdate"
             name="nascimento"
             value=""
             min="1900-01-01"
@@ -91,11 +105,8 @@
           />
         </div>
 
-        <br />
-
-        <div>
-          <label for="gen">Selecione seu gênero</label>
-          <br />
+        <div class="gen-group">
+          <label>Selecione seu gênero</label>
           <select id="gen" name="gênero" title="Selecione seu gênero">
             <option value="Masculino">Masculino</option>
             <option value="Feminino">Feminino</option>
@@ -114,22 +125,23 @@
         <br />
         <br />
 
-        <input type="submit" value="Cadastrar-se" />
+        <div class="..button-group">
+          <button type="button">Cadastrar-se</button>
+        </div>
       </form>
     </div>
     <br />
 
-    <hr>
+    <hr />
     <footer>
       <p>
         <a href="/index.html" target="_blank"> Sobre </a> |
         <a href="/perguntas.html" target="_blank"> Dúvidas</a> |
         <a href="/sobre.html" target="_blank"> Quem Somos</a>
       </p>
-  <p>
-  O <b>Clube do Livro ©</b> é uma ação colaborativa aos amantes dos livro.
-  </p>
-</footer>
+      <p>
+        O <b>Clube do Livro ©</b> é uma ação colaborativa aos amantes dos livro.
+      </p>
+    </footer>
   </body>
 </html>
- 
