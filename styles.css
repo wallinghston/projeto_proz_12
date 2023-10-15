@@ -7,10 +7,30 @@
 html,
 body {
   height: 100%;
-  margin: 0;
+  margin: 0px;
   padding: 1em 1em;
   font-size: 16px;
+  color: whitesmoke;
   text-align: left;
+}
+
+h1{
+  font-size: 20px ;
+  color: #111;
+  text-align: center;
+}
+
+h2{
+  color: #111;
+}
+
+.span-required{
+  font-size: 15px;
+  margin: 3px 0 0 1px;
+  color: var(--color-red);
+  display:none;
+  
+
 }
 
 header {
@@ -26,6 +46,7 @@ nav {
   border-color: #a8a8a8;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    margin: 20px;
 }
 
 ul {
@@ -60,11 +81,34 @@ a {
   background-color: #aa6800;
 }
 
+#form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+}
+
 .form-group {
-  max-width: 250px;
+  width: 80%;
   display: flex;
+  margin-left: -100px;
+  margin-right: -300px;
   flex-direction: column;
   margin-bottom: 1.2rem;
+  margin: 20px 0 10px;
+  color:#111;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.required ::after {
+  content: "campo obrigátorio";
+  color:tomato;
+  font-size: 0.6rem;
+  top: 0;
+  right: 0;
 }
 
 .gen-group {
@@ -72,14 +116,15 @@ a {
   flex-direction: column;
   margin-bottom: 1.2rem;
   overflow: hidden;
+  justify-content: center;
 }
 
 .gen-group select {
   width: 250px;
   margin-top: 0.5rem;
   padding: 0.4rem 0.6rem;
-  color: #000;
-  font-size: 30px;
+  color: rgb(26, 25, 25);
+  font-size: 15px;
   border-radius: 0.35rem;
   border-style: solid;
   border-width: 0.1rem;
@@ -87,6 +132,14 @@ a {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
+
+.form-group input{
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0.5em;
+}
+
 
 .button-group {
   display: flex;
@@ -96,7 +149,9 @@ a {
 
 label {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 input {
@@ -110,6 +165,8 @@ input {
   outline-color: rgb(37, 99, 235);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
@@ -155,6 +212,10 @@ width: 100%;
 min-height:100 px;
 background: #444;
 display: flex;
+margin left:30px;
+margin right:30px;
+padding-left:2px;
+padding-right:30px;
 
 }
 footer .boxs
